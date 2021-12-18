@@ -4,10 +4,15 @@ namespace Snake
     public class Snake
     {
         public List<SnakeTile> snakeParts;
+        private bool directionChosen = false;
         public Snake()
         {
             snakeParts = new List<SnakeTile>();
             snakeParts.Add(new SnakeTile(SnakeGame.numGenerator.Next(GameVariables.mapSize), SnakeGame.numGenerator.Next(GameVariables.mapSize),0));
+        }
+        private void ChangeLockDirection()
+        {
+            directionChosen = !directionChosen;
         }
         public void Move()
         {
@@ -29,10 +34,35 @@ namespace Snake
             else if (snakeParts[0].y > GameVariables.mapSize - 1)
                 snakeParts[0].y = 0;
             TryEat(SnakeGame.yummy);
+            if (directionChosen == true)
+                ChangeLockDirection();
         }
         public void ChangeDirection(int direction)
         {
-            snakeParts[0].direction = direction;
+            if (directionChosen == false)
+            {
+                if (snakeParts[0].direction != 2 && direction == 0)
+                {
+                    snakeParts[0].direction = direction;
+                    ChangeLockDirection();
+                }
+                else if (snakeParts[0].direction != 0 && direction == 2)
+                {
+                    snakeParts[0].direction = direction;
+                    ChangeLockDirection();
+                }
+                else if (snakeParts[0].direction != 3 && direction == 1)
+                {
+                    snakeParts[0].direction = direction;
+                    ChangeLockDirection();
+                }  
+                else if (snakeParts[0].direction != 1 && direction == 3)
+                {
+                    snakeParts[0].direction = direction;
+                    ChangeLockDirection();
+                }   
+            }
+            
         }
         public void TryEat(Food food)
         {
@@ -40,6 +70,17 @@ namespace Snake
             {
                 SnakeGame.SpawnFood();
                 Grow();
+            }
+            else
+            {
+                for(int i = 1; i < snakeParts.Count; i++)
+                {
+                    if(snakeParts[0].x == snakeParts[i].x && snakeParts[0].y == snakeParts[i].y)
+                    {
+                        SnakeGame.gameLost = true;
+                        break;
+                    }
+                }
             }
         }
         public void Grow()

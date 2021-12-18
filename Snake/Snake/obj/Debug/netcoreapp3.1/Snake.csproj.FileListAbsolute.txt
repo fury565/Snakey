@@ -11,3 +11,16 @@ C:\Users\Fury\source\repos\Snake\Snake\obj\Debug\netcoreapp3.1\Snake.csproj.Core
 C:\Users\Fury\source\repos\Snake\Snake\obj\Debug\netcoreapp3.1\Snake.dll
 C:\Users\Fury\source\repos\Snake\Snake\obj\Debug\netcoreapp3.1\Snake.pdb
 C:\Users\Fury\source\repos\Snake\Snake\obj\Debug\netcoreapp3.1\Snake.genruntimeconfig.cache
+C:\Users\Fury\Documents\GitHub\Snake\Snakey\Snake\Snake\bin\Debug\netcoreapp3.1\Snake.exe
+C:\Users\Fury\Documents\GitHub\Snake\Snakey\Snake\Snake\bin\Debug\netcoreapp3.1\Snake.deps.json
+C:\Users\Fury\Documents\GitHub\Snake\Snakey\Snake\Snake\bin\Debug\netcoreapp3.1\Snake.runtimeconfig.json
+C:\Users\Fury\Documents\GitHub\Snake\Snakey\Snake\Snake\bin\Debug\netcoreapp3.1\Snake.runtimeconfig.dev.json
+C:\Users\Fury\Documents\GitHub\Snake\Snakey\Snake\Snake\bin\Debug\netcoreapp3.1\Snake.dll
+C:\Users\Fury\Documents\GitHub\Snake\Snakey\Snake\Snake\bin\Debug\netcoreapp3.1\Snake.pdb
+C:\Users\Fury\Documents\GitHub\Snake\Snakey\Snake\Snake\obj\Debug\netcoreapp3.1\Snake.csproj.AssemblyReference.cache
+C:\Users\Fury\Documents\GitHub\Snake\Snakey\Snake\Snake\obj\Debug\netcoreapp3.1\Snake.AssemblyInfoInputs.cache
+C:\Users\Fury\Documents\GitHub\Snake\Snakey\Snake\Snake\obj\Debug\netcoreapp3.1\Snake.AssemblyInfo.cs
+C:\Users\Fury\Documents\GitHub\Snake\Snakey\Snake\Snake\obj\Debug\netcoreapp3.1\Snake.csproj.CoreCompileInputs.cache
+C:\Users\Fury\Documents\GitHub\Snake\Snakey\Snake\Snake\obj\Debug\netcoreapp3.1\Snake.dll
+C:\Users\Fury\Documents\GitHub\Snake\Snakey\Snake\Snake\obj\Debug\netcoreapp3.1\Snake.pdb
+C:\Users\Fury\Documents\GitHub\Snake\Snakey\Snake\Snake\obj\Debug\netcoreapp3.1\Snake.genruntimeconfig.cache

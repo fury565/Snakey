@@ -36,8 +36,15 @@ namespace Snake
                 SnakeGame.DisplaySnake(snake);
                 SnakeGame.DisplayOther();
                 snake.Move();
-                Thread.Sleep(100);
+                Thread.Sleep((int)GameVariables.msRefreshRate);
+                if (SnakeGame.gameLost)
+                {
+                    thread.Interrupt();
+                    break;
+                }
             }
+            SnakeGame.GameOver();
+            Console.ReadKey();
         }
     }
 }
